@@ -13,6 +13,10 @@
 		03E06B1A2C42FEF8003EB488 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 03E06B192C42FEF8003EB488 /* Base */; };
 		03E06B1C2C42FEFF003EB488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E06B1B2C42FEFF003EB488 /* Assets.xcassets */; };
 		03E06B1F2C42FEFF003EB488 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 03E06B1E2C42FEFF003EB488 /* Base */; };
+		03E06B272C43000F003EB488 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E06B262C43000F003EB488 /* Card.swift */; };
+		03E06B292C43001C003EB488 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E06B282C43001B003EB488 /* Scheduler.swift */; };
+		03E06B2B2C430024003EB488 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E06B2A2C430023003EB488 /* SecondViewController.swift */; };
+		03E06B2F2C4305B9003EB488 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E06B2E2C4305B9003EB488 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		03E06B1B2C42FEFF003EB488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03E06B1E2C42FEFF003EB488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03E06B202C42FEFF003EB488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E06B262C43000F003EB488 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = ../../CardGame/CardGame/Card.swift; sourceTree = "<group>"; };
+		03E06B282C43001B003EB488 /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Scheduler.swift; path = ../../CardGame/CardGame/Scheduler.swift; sourceTree = "<group>"; };
+		03E06B2A2C430023003EB488 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../../CardGame/CardGame/SecondViewController.swift; sourceTree = "<group>"; };
+		03E06B2E2C4305B9003EB488 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		03E06B112C42FEF8003EB488 /* iosCardGame */ = {
 			isa = PBXGroup;
 			children = (
+				03E06B262C43000F003EB488 /* Card.swift */,
+				03E06B282C43001B003EB488 /* Scheduler.swift */,
+				03E06B2A2C430023003EB488 /* SecondViewController.swift */,
 				03E06B122C42FEF8003EB488 /* AppDelegate.swift */,
 				03E06B142C42FEF8003EB488 /* SceneDelegate.swift */,
 				03E06B162C42FEF8003EB488 /* ViewController.swift */,
@@ -63,6 +74,7 @@
 				03E06B1B2C42FEFF003EB488 /* Assets.xcassets */,
 				03E06B1D2C42FEFF003EB488 /* LaunchScreen.storyboard */,
 				03E06B202C42FEFF003EB488 /* Info.plist */,
+				03E06B2E2C4305B9003EB488 /* WelcomeViewController.swift */,
 			);
 			path = iosCardGame;
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E06B2B2C430024003EB488 /* SecondViewController.swift in Sources */,
 				03E06B172C42FEF8003EB488 /* ViewController.swift in Sources */,
 				03E06B132C42FEF8003EB488 /* AppDelegate.swift in Sources */,
 				03E06B152C42FEF8003EB488 /* SceneDelegate.swift in Sources */,
+				03E06B292C43001C003EB488 /* Scheduler.swift in Sources */,
+				03E06B272C43000F003EB488 /* Card.swift in Sources */,
+				03E06B2F2C4305B9003EB488 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
