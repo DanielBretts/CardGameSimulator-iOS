@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="half_earth 2" translatesAutoresizingMaskIntoConstraints="NO" id="Q4o-lk-DZg">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="half_earth 2" translatesAutoresizingMaskIntoConstraints="NO" id="Q4o-lk-DZg">
                                 <rect key="frame" x="533" y="32" width="287" height="308"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West Side" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61F-uF-x6p">
@@ -37,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFd-JE-LPh">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFd-JE-LPh">
                                 <rect key="frame" x="388" y="320" width="76" height="36"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="START"/>
@@ -45,7 +45,7 @@
                                     <action selector="startGame:" destination="fcm-si-pdj" eventType="touchUpInside" id="O2B-nP-fSk"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="half_earth" translatesAutoresizingMaskIntoConstraints="NO" id="ZjW-MH-iBR">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="half_earth" translatesAutoresizingMaskIntoConstraints="NO" id="ZjW-MH-iBR">
                                 <rect key="frame" x="91" y="32" width="228" height="308"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GF7-ty-Gxz">
@@ -82,6 +82,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="BTN_startGame" destination="fFd-JE-LPh" id="h1i-9R-fgN"/>
+                        <outlet property="IMG_east_earth" destination="Q4o-lk-DZg" id="x9l-gR-W55"/>
+                        <outlet property="IMG_west_earth" destination="ZjW-MH-iBR" id="xUz-L2-qkb"/>
                         <outlet property="LBL_welcome" destination="GF7-ty-Gxz" id="lOA-rV-uJJ"/>
                         <outlet property="TF_insertName" destination="g8V-6b-5cK" id="ag2-50-eMM"/>
                     </connections>
@@ -154,6 +157,8 @@
                     <connections>
                         <outlet property="IMG_firstCard" destination="FOk-tA-u5M" id="KhZ-OB-kuz"/>
                         <outlet property="IMG_secondCard" destination="kU1-fR-OKW" id="12J-FT-xFn"/>
+                        <outlet property="LBL_playerEast" destination="Yhs-c9-r8u" id="dwN-Ec-nzj"/>
+                        <outlet property="LBL_playerWest" destination="Yhs-c9-r8u" id="aBr-tn-zI8"/>
                         <outlet property="firstCardScore_LBL" destination="k46-Te-5iy" id="5jF-Mp-3q3"/>
                         <outlet property="secondCardScore_LBL" destination="y7a-rF-uoN" id="fj3-pW-g07"/>
                     </connections>
@@ -170,9 +175,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8k-WI-fnN">
-                                <rect key="frame" x="406" y="184" width="84" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winner: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8k-WI-fnN">
+                                <rect key="frame" x="359" y="173.66666666666666" width="134" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -180,7 +184,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5nQ-f7-Ttj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L8k-WI-fnN" firstAttribute="centerY" secondItem="zUe-EO-dJd" secondAttribute="centerY" id="HBH-zf-YFk"/>
+                            <constraint firstItem="L8k-WI-fnN" firstAttribute="centerX" secondItem="zUe-EO-dJd" secondAttribute="centerX" id="fQy-xJ-kV8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="LBL_winner" destination="L8k-WI-fnN" id="Trn-HD-lw8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XbI-oP-cex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

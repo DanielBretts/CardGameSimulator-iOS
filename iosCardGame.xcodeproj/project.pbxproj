@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035D3DC92C46BED400B2B4B0 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D3DC82C46BED400B2B4B0 /* Direction.swift */; };
+		035D3DCB2C46C0A100B2B4B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D3DCA2C46C0A100B2B4B0 /* Constants.swift */; };
 		03E06B132C42FEF8003EB488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E06B122C42FEF8003EB488 /* AppDelegate.swift */; };
 		03E06B152C42FEF8003EB488 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E06B142C42FEF8003EB488 /* SceneDelegate.swift */; };
 		03E06B172C42FEF8003EB488 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E06B162C42FEF8003EB488 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		035D3DC82C46BED400B2B4B0 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		035D3DCA2C46C0A100B2B4B0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		03E06B0F2C42FEF8003EB488 /* iosCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosCardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E06B122C42FEF8003EB488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03E06B142C42FEF8003EB488 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				03E06B1D2C42FEFF003EB488 /* LaunchScreen.storyboard */,
 				03E06B202C42FEFF003EB488 /* Info.plist */,
 				03E06B2E2C4305B9003EB488 /* WelcomeViewController.swift */,
+				035D3DC82C46BED400B2B4B0 /* Direction.swift */,
+				035D3DCA2C46C0A100B2B4B0 /* Constants.swift */,
 			);
 			path = iosCardGame;
 			sourceTree = "<group>";
@@ -153,10 +159,12 @@
 				03E06B2B2C430024003EB488 /* SecondViewController.swift in Sources */,
 				03E06B172C42FEF8003EB488 /* ViewController.swift in Sources */,
 				03E06B132C42FEF8003EB488 /* AppDelegate.swift in Sources */,
+				035D3DC92C46BED400B2B4B0 /* Direction.swift in Sources */,
 				03E06B152C42FEF8003EB488 /* SceneDelegate.swift in Sources */,
 				03E06B292C43001C003EB488 /* Scheduler.swift in Sources */,
 				03E06B272C43000F003EB488 /* Card.swift in Sources */,
 				03E06B2F2C4305B9003EB488 /* WelcomeViewController.swift in Sources */,
+				035D3DCB2C46C0A100B2B4B0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
