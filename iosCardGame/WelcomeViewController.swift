@@ -86,7 +86,7 @@ class WelcomeViewController: UIViewController,UITextFieldDelegate{
             playerSide = Direction.east
         }else if (lat <= MIDDLE){
             //west
-            IMG_east_earth.isHidden = false
+            IMG_west_earth.isHidden = false
             playerSide = Direction.west
         }
     }

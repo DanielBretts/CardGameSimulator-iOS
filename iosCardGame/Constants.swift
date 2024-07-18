@@ -17,6 +17,7 @@ struct Constants{
         static let ROUNDS: Int = 3
         static let AI_LABEL: String = "AI"
         static let WINNER_KEY: String = "winner"
+        static let WINNER_SCORE: String = "winnerScore"
         
     }
 

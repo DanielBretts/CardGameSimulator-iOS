@@ -82,17 +82,22 @@ class ViewController: UIViewController, Callback {
     
     func setGameWinner() {
         let winnerName: String?
-
+        let winnerScore: Int?
         if (firstScore > secondScore) {
             winnerName = playersMap[Direction.west]
+            winnerScore = firstScore
         } else if secondScore > firstScore {
             winnerName = playersMap[Direction.east]
+            winnerScore = secondScore
         } else {
             // It's a tie
             winnerName = "No one (Tie)"
+            winnerScore = firstScore
         }
         // Save the winner's name
         UserDefaults.standard.set(winnerName, forKey: Constants.GameScreen.WINNER_KEY)
+        UserDefaults.standard.set(winnerScore, forKey: Constants.GameScreen.WINNER_SCORE)
+        
     }
 
     
